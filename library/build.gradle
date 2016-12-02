@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android 
+{
+    compileSdkVersion Integer.parseInt(ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig 
+    {
+        versionCode  Integer.parseInt(VERSION_CODE)
+        minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
+        consumerProguardFiles 'proguard.txt'
+    }
+
+    compileOptions 
+    {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
