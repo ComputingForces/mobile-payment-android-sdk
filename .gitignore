@@ -24,11 +24,14 @@ gh-pages
 build
 
 # IDEA
+.idea
 *.iml
 *.ipr
 *.iws
 out
 .idea
 
+###
 Settings.my
 local.properties
+maven.secret.properties
