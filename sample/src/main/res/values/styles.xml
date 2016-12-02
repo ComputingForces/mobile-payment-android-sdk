@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+        <item name="android:textColorSecondary">#757575</item>
+    </style>
+
+
+
+    <style name="AppTheme.Button.White" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/dark_blue</item>
+    </style>
+
+
+    <style name="AppTheme.Button.Blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="Widget.Spinner" parent="Widget.AppCompat.Spinner"/>
+
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/nestedScroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/payment_frame"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/header"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/payment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_left_indent"
+                android:layout_marginRight="@dimen/default_right_indent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_title"
+                android:textColor="@color/title"
+                android:textSize="20sp"/>
+
+              <TextView
+                  android:id="@+id/order_info"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/default_left_indent"
+                  android:layout_marginRight="@dimen/default_right_indent"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="10dp"
+                  tools:text="Заказ № 123456789 от 18 ноября 2016"
+                  android:textColor="@color/order_info"
+                  android:textSize="18sp"/>
+
+              <TextView
+                  android:id="@+id/amount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/default_left_indent"
+                  android:layout_marginRight="@dimen/default_right_indent"
+                  android:layout_gravity="center_horizontal"
+
+                  android:textStyle="bold"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="12dp"
+                  tools:text="1 124 WMR"
+                  android:textColor="@color/title"
+                  android:textSize="24sp"/>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--android.support.v7.widget.AppCompatSpinner-->
+    <Spinner
+            android:id="@+id/account_type"
+            style="@style/Widget.Spinner"
+            android:layout_marginLeft="@dimen/default_left_indent"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentTop="true"
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+
+            />
+        <!---->
+        <!--android:layout_width="100dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+
+        <!--android:layout_marginLeft="-16dp"-->
+        <EditText
+            android:id="@+id/account"
+            android:layout_alignParentTop="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/account_type"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"
+
+
+            android:layout_marginRight="@dimen/default_right_indent"
+            android:maxLines="1"
+
+
+            tools:text="74996273397"
+            tools:hint="@string/x20_payment_type_phone_hint"
+            />
+
+
+        <TextView
+            android:id="@+id/account_help"
+            android:layout_below="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/account"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/account_phone_help"
+            android:textColor="@color/account_help"
+            android:textSize="11sp"/>
+
+
+        <!--android:layout_marginLeft="-14dp"-->
+
+        <TextView
+            android:id="@+id/payment_confirm_text"
+            android:layout_below="@+id/account_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_left_indent"
+            android:layout_marginRight="@dimen/default_right_indent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:text="@string/order_confirm"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:textSize="18sp"/>
+
+        <Button
+            android:theme="@style/AppTheme.Button.White"
+            android:id="@+id/invoice_only"
+            android:layout_below="@+id/payment_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_left_indent"
+            android:layout_marginRight="@dimen/default_right_indent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="3"
+
+            android:minWidth="300dp"
+            tools:text="Оплатить в  WEBMONEY KEEPER\n Бесплатно"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"/>
+
+        <Button
+            android:theme="@style/AppTheme.Button.White"
+            android:id="@+id/sms_payment"
+            android:layout_below="@+id/invoice_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_left_indent"
+            android:layout_marginRight="@dimen/default_right_indent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="3"
+            android:minWidth="300dp"
+            tools:text="Получить код в SMS\n Стоимость 0.9 WMR"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"/>
+
+
+
+        <Button
+            android:theme="@style/AppTheme.Button.White"
+            android:id="@+id/ussd_payment"
+            android:layout_below="@+id/sms_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_left_indent"
+            android:layout_marginRight="@dimen/default_right_indent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="3"
+            android:minWidth="300dp"
+            tools:text="С помощью  USSD\n Стоимость 0.9 WMR"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

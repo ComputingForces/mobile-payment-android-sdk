@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">WebMoney Mobile SDK</string>
+    <string name="title_activity_main">@string/app_name</string>
+
+    <string name="payment_title">Оплата</string>
+
+
+    <string name="x20_payment_type_phone">Телефон</string>
+    <string name="x20_payment_type_wmid">WMID</string>
+    <string name="x20_payment_type_email">Email</string>
+
+    <string name="x20_payment_type_phone_hint">Номер телефона</string>
+
+    <string name="x20_payment_type_wmid_hint">WMID</string>
+    <string name="x20_payment_type_email_hint">Email</string>
+
+    <string name="order_info">Заказ № %1$d от %2$s</string>
+    <string name="order_confirm">Подтвердите заказ</string>
+
+
+    <string name="invoice_only_payment_title">ОПЛАТИТЬ в WEBMONEY KEEPER</string>
+    <string name="invoice_only_payment_subtitle">Бесплатно</string>
+
+    <string name="sms_payment_title">ПОЛУЧИТЬ КОД В SMS</string>
+
+
+    <string name="ussd_payment_title">С ПОМОЩЬЮ USSD</string>
+
+    <string name="subtile_sms_ussd_r">дополнительная комиссия 0.9 WMR</string>
+    <string name="subtile_sms_ussd_z">дополнительная комиссия 0.04 WMZ</string>
+    <string name="subtile_sms_ussd_e">дополнительная комиссия 0.03 WME</string>
+    <string name="subtile_sms_ussd_u">дополнительная комиссия 0.25 WMU</string>
+
+    <!--
+    <string name="account_hint">WMID, номер телефона или email</string>
+    -->
+    <string name="x20_sms_confirm_hint">Введите код из СМС</string>
+    <string name="x20_sms_confirm_title">Введите код из СМС</string>
+    <string name="x20_sms_confirm_button_title">Подтвердить</string>
+    <string name="x20_invoice_confirm_button_title">Я уже оплатил</string>
+
+    <string name="account_phone_help">код страны и цифры, например: 79161234568</string>
+    <string name="account_wmid_help">идентификатор участника в системе WebMoney</string>
+    <string name="account_email_help">электронный адрес, связанный с регистрацией в WebMoney</string>
+
+    <string name="order_description">Оплата заказа № %1$d</string>
+
+    <string name="order_confirmed">Платеж успешно подтвержден!</string>
+
+    <string name="error_dialog_title">Ошибка</string>
+    <string name="info_dialog_title">Информация</string>
+    <string name="payment_confirm">Подтвердите платеж</string>
+
+    <string name="invoice_confirm_text">На ваш WMID был выставлен счет. Оплатите его для завершения платежа</string>
+    <string name="ussd_confirm_text">Вам должно прийти USSD сообщение с краткой инструкцией, пришлите ответ на него для завершения платежа</string>
+</resources>
+

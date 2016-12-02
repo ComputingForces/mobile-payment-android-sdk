@@ -1,0 +1,33 @@
+
+# Ant
+MANIFEST.MF
+./*.jar
+build
+
+# ADT
+.classpath
+.project
+.settings
+local.properties
+bin
+gen
+proguard.cfg
+
+# OSX
+.DS_Store
+
+# Github
+gh-pages
+
+# Gradle
+.gradle
+build
+
+# IDEA
+*.iml
+*.ipr
+*.iws
+out
+.idea
+
+Settings.my

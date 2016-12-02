@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#ff000000</color>
+
+    <color name="title">#FF333333</color>
+    <color name="payment_frame">#ffEEEEEE</color>
+
+    <color name="order_info">#ff747474</color>
+    <color name="account_help">#ff747474</color>
+
+    <color name="blue">#3783C9</color>
+
+    <color name="dark_blue">#007FD4</color>
+    <color name="button_title_disabled">#FFcccccc</color>
+    <color name="toolbar">#3783C9</color>
+    <color name="white">#FFffff</color>
+    <color name="tabbar_background">#2D72AD</color>
+    <color name="tab_selected">#FFffff</color>
+    <color name="tab_text">#B1CEEA</color>
+
+    <color name="text_label">#FF000000</color>
+    <color name="subtitle">#FFcccccc</color>
+
+    <color name="intro">#ff666666</color>
+
+
+
+</resources>

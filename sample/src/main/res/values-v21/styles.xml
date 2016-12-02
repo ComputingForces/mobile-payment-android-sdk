@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="AppTheme.Button.White" parent="Widget.AppCompat.Button.Colored">
+
+        <item name="android:colorButtonNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/dark_blue</item>
+    </style>
+
+    <style name="AppTheme.Button.Blue" parent="Widget.AppCompat.Button.Colored">
+
+        <item name="android:colorButtonNormal">@color/dark_blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+</resources>
