@@ -1,0 +1,14 @@
+/**
+ * This is te system deps artifacts and versions configuration file.
+ * You can put here your app-specific deps too, if you wish.
+ */
+
+ext {
+    supportLibVersion = '25.0.0'
+
+    supportLibs = [
+            appCompat   : "com.android.support:appcompat-v7:${supportLibVersion}",
+            design      : "com.android.support:design:${supportLibVersion}"
+    ]
+
+}

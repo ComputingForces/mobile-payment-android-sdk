@@ -1,0 +1,17 @@
+/**
+ * Version numbers configuration file.
+ * Adjust your build tools and app versions here.
+ */
+
+ext {
+
+    /**
+     * Build Tools Versions
+     */
+    androidBuildToolsVersion = '24.0.2'
+    androidTargetSdkVersion = 25
+    androidCompileSdkVersion = 25
+    androidMinSdkVersion = 11
+
+
+}
