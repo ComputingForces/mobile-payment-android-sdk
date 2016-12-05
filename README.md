@@ -15,9 +15,10 @@ Installation
 ---
 
 1. Include library
---
+---
 
 - Maven dependency:
+
 
 <dependency>
   <groupId>ru.webmoney.android</groupId>
@@ -29,11 +30,12 @@ Installation
 or
 
 - Gradle dependency:
+
    On development stage
 
 
 2. Android Manifest
---
+---
 
 <manifest>
     <!-- Include following permission if you load images from Internet -->
