@@ -19,13 +19,14 @@ Installation
 
 - Maven dependency:
 
-
+```
 <dependency>
   <groupId>ru.webmoney.android</groupId>
   <artifactId>mobilepaymentsdk</artifactId>
   <version>1.0.1</version>
   <type>pom</type>
 </dependency>
+```
 
 or
 
