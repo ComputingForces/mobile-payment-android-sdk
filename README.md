@@ -43,6 +43,14 @@ or
 
 
 
+License
+---
+Android Webmoney Mobile Payment SDK is licensed under Apache V2 license, so feel free to use it in any open-source or commercial project.
+
+
+Contact
+---
+Please post all bugs, feature requests, etc into the issues section. As usual, pull requests are welcome.
 
 
 
