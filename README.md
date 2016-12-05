@@ -1,7 +1,7 @@
 Android Webmoney Mobile Payment SDK V1
 ===
 
-First Release 02.12.2006
+First Release 02.12.2016
 
 ---
 
@@ -10,6 +10,11 @@ Compatibility Notice
 
 - Supports API level 7+ for library.
 - Supports API level 11+ for sample.
+
+
+Requirements
+---
+You need to register on the https://merchant.webmoney.ru
 
 
 Installation
