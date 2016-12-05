@@ -23,23 +23,12 @@ Installation
 1. Include library
 --
 
-- Maven dependency:
 
-```
-<dependency>
-  <groupId>ru.webmoney.android</groupId>
-  <artifactId>mobilepaymentsdk</artifactId>
-  <version>1.0.1</version>
-  <type>pom</type>
-</dependency>
-```
+The library is available in jCenter / BinTray:
 
-or
-
-- Gradle dependency:
-
-   On development stage
-
+``
+        compile 'ru.webmoney.android:mobilepaymentsdk:1.0.1'
+``
 
 2. Android Manifest
 --
