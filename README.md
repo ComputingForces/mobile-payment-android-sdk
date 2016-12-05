@@ -48,6 +48,10 @@ or
 </manifest>
 ```
 
+3. Using the example
+---
+Open Settings.java file and set the payment information
+
 
 
 License
