@@ -38,6 +38,7 @@ or
 2. Android Manifest
 ---
 
+```
 <manifest>
     <!-- Include following permission if you load images from Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -45,6 +46,7 @@ or
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     ...
 </manifest>
+```
 
 
 
