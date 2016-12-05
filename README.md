@@ -15,6 +15,7 @@ Installation
 ---
 
 1. Include library
+--
 
 - Maven dependency:
 
@@ -32,6 +33,7 @@ or
 
 
 2. Android Manifest
+--
 
 <manifest>
     <!-- Include following permission if you load images from Internet -->
