@@ -1,4 +1,4 @@
-Android Webmoney Mobile SDK
+Android Webmoney Mobile Payment SDK
 ===
 
 First Release 02.12.2006

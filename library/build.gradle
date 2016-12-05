@@ -1,17 +1,4 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
-    }
-}
 apply plugin: 'com.android.library'
-
-repositories {
-    jcenter()
-}
-
 
 
 android {
@@ -31,4 +18,4 @@ android {
     }
 }
 
-//apply from: 'bintray-publish.gradle'
+apply from: 'bintray-publish.gradle'

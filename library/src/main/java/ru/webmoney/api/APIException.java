@@ -39,8 +39,7 @@ public class APIException extends Exception
     }
 
     /**
-     * HTTP status returned from API call or null if call hasn't been executed
-     * yet.
+     @return HTTP status from API call or null if call hasn't been executed yet.
      */
     public Integer getStatus() {
         return status;

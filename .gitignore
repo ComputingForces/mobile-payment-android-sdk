@@ -35,3 +35,4 @@ out
 Settings.my
 local.properties
 maven.secret.properties
+bintray-load.bat
