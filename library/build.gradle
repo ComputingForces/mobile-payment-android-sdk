@@ -7,7 +7,8 @@ android {
 
 
     defaultConfig {
-        minSdkVersion androidMinSdkVersion
+//        minSdkVersion androidMinSdkVersion
+        minSdkVersion 7
         targetSdkVersion androidTargetSdkVersion
     }
 

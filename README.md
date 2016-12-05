@@ -8,7 +8,8 @@ First Release 02.12.2006
 Compatibility Notice
 ---
 
-- Supports API level 11+ only.
+- Supports API level 7+ for library.
+- Supports API level 11+ for sample.
 
 
 Installation
