@@ -35,7 +35,6 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
-import java.util.regex.Pattern;
 
 import ru.webmoney.api.APIClient;
 import ru.webmoney.api.APIException;
@@ -49,6 +48,7 @@ import ru.webmoney.api.payment.SignType;
 import ru.webmoney.api.payment.TransactionRequest;
 import ru.webmoney.api.payment.TransactionResponse;
 import ru.webmoney.api.utils.SmsReceiver;
+import ru.webmoney.api.utils.X20SMSReceiver;
 import ru.webmoney.mobile.payment.sample.R;
 import ru.webmoney.mobile.payment.sample.Settings;
 import ru.webmoney.mobile.payment.sample.tasks.ITaskCallback;
@@ -441,14 +441,9 @@ public class X20Fragment extends BaseFragment implements ITaskCallback
     private void registerSMSReceiver(Handler handler)
     {
         unRegisterSMSReceiver();
-
         try
         {
-            smsReceiver = new SmsReceiver(new Pattern []
-                    {
-                      Pattern.compile("^Kod\\:([0-9]{5,10})")
-                    },
-                   handler, 0);
+            smsReceiver = new X20SMSReceiver(handler, 0);
             IntentFilter intentFilter = new IntentFilter("android.provider.Telephony.SMS_RECEIVED");
             intentFilter.setPriority(999);
             getActivity().registerReceiver(smsReceiver, intentFilter);
